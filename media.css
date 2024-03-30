@@ -1,0 +1,313 @@
+:root{
+    --fs-600: 1rem;
+    --fs-625: 1.125rem;
+    --fs-650: 1.5rem;
+    --fs-850: 2.5rem;
+    --fs-primary: var(--fs-850);
+    --fs-secondary: var(--fs-650);
+    --fs-third: var(--fs-625);
+}
+@media (max-width: 1000px) {
+    /* NAVIGATION */
+    .nav-list {
+        display: none;
+    }
+    .nav-list .close-btn {
+        display: block;
+        position: absolute;
+        left: 100px;
+        top: 2vh;
+    }
+    .nav-list .close-btn:hover {
+        fill: var(--line-primary-clr)
+    }
+    .open-btn {
+        display: flex;
+    }
+    .open-btn:hover,
+    .open-btn:focus {
+        cursor: pointer;
+      border: 2px solid var(--line-primary-clr);
+    }
+    #footer .section-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    #footer .copywright-wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+}
+/* TABLET */
+@media (max-width: 800px) {
+    /* GENERAL */
+    .section-wrapper {
+        margin-inline: 32px;
+    }
+    .card-wrapper {
+        gap: 8px;
+    }
+    
+    /* MARKETING SECTION */
+    .marketing-card {
+        padding: 0 8px;
+    }
+    
+    
+    /* CAROUSEL SECTION */
+    .carousel-slider .carousel-card .context-side {
+        padding-inline: 24px;
+    }
+
+    .carousel-slider .carousel-card .context-side li {
+        font-size: 12px;
+    }
+    .carousel-slider .carousel-card .context-side span{
+        font-size: 20px;
+    }
+
+
+    /* PROCESS SECTION */
+    .selling-process, .buying-process {
+        background-color:  rgba(0,0,0,.5);
+        padding: 16px;
+      }
+      .selling-process ul, .buying-process ul {
+        margin-top: 16px;
+        counter-reset: list-number;
+      }
+      .selling-process ul li,
+      .buying-process ul li{
+        font-size: 12px;
+      }
+      .selling-process ul li:before,
+      .buying-process ul li:before {        
+        margin-right: 6px;
+        margin-bottom:6px;
+        width:24px;
+        height:24px;
+        font-size: 12px;
+      }
+
+      /* ABOUT SECTION */
+      #about-section {
+        margin-bottom: 44px;
+      }
+      .about-wrapper .about-info {
+        padding: 16px;
+      }
+
+      .about-wrapper .about-info p,
+      .about-wrapper .about-image p, 
+      .about-wrapper .about-info ul,
+      .about-wrapper .about-info li {
+        font-size: 12px;
+      }
+      .about-wrapper .about-image{
+        width: 100%;
+      }
+      .about-wrapper:last-child .about-info {
+        max-height: 230px;
+      }
+      /* STRATEGY SECTION */
+      .strategy-info {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .strategy-info .info-card:first-child{
+        border-top: none;
+      }
+
+
+      /* PARTNER SECTION */
+      .image-wrapper img {
+        padding-inline: 8px;
+        max-width: 110px;
+        max-height: 110px;
+        object-fit: contain;
+      }
+
+      /* FOOTER */
+      .footer-partners:before,
+      .footer-partners:after {
+        width: 290px;
+      }
+      .copywright-wrapper {
+        margin-inline: 24px;
+      }
+      .contact-socials, 
+      .address-card, 
+      .contact-card, 
+      .social-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+}
+
+
+
+/* MOBILE */
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 0;
+    }
+    .container figure{
+        display: none;
+    }
+    .card-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+        margin-top: 0;
+    }
+
+    .marketing-card p {
+        font-size: 12px;
+    }
+    #marketing-plan h2 {
+        text-align: center;
+    }
+    /* CAROUSEL SECTION */
+    .carousel-wrapper {
+        gap: 0;
+    }
+    .carousel-slider .carousel-card .context-side {
+        padding-inline: 14px;
+    }
+
+    .carousel-slider .carousel-card .context-side li {
+        font-size: 8px;
+    }
+    .carousel-slider .carousel-card .context-side span{
+        font-size: 16px;
+    }
+    .carousel-indicators {
+        height: 8px;
+        bottom: 20px;
+    }
+    .carousel-indicators .btn {
+        width: 8px;
+        height: 8px;
+    }
+    .carousel-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+        /* PROCESS SECTION */
+        .selling-process, .buying-process {
+            background-color:  rgba(0,0,0,.5);
+            padding: 12px;
+          }
+          .selling-process ul, .buying-process ul {
+            margin-top: 12px;
+            counter-reset: list-number;
+          }
+          .selling-process ul li,
+          .buying-process ul li{
+            font-size: 8px;
+          }
+          .selling-process ul li:before,
+          .buying-process ul li:before {        
+            margin-right: 6px;
+            margin-bottom:6px;
+            width:16px;
+            height:16px;
+            font-size: 12px;
+          }
+          
+          /* ABOUT SECTION */
+          #about-section {
+            margin-block: 32px;
+          }
+          #about-section .section-wrapper{
+            padding-top: 0;
+          }
+          .section-wrapper .about-wrapper {
+            display: flex;
+            flex-direction: column;
+          }
+          .about-wrapper .about-info{
+            padding: 20px;
+          }
+          .about-wrapper:last-child .about-info:last-child {
+            padding-block: 0;
+          }
+          .about-wrapper .about-info h2{
+            padding-bottom: 12px;
+          }
+          .about-wrapper .about-info p {
+            margin-top: 12px;
+          }
+          .about-wrapper .about-image,
+          .about-wrapper:last-child .about-image:last-child img{
+            display: none;
+          }
+          .about-wrapper:last-child .about-info:last-child{
+            margin-top: 12px;
+          }
+
+          /* PARTNERS SECTION */
+          #partners-section .end-to-end {
+            grid-template-columns: repeat(1, 1fr);
+        }
+          .image-end {
+            display: none;
+        }
+        #partners {
+            margin-block: 44px;
+        }
+        #partners-section .end-to-end {
+            margin-top: 0;
+        }
+        .partners-ii {
+          flex-direction: column;
+        }
+        .partners-ii span,
+        .partners-ii p {
+          padding-inline: 16px;
+        }
+        .partners-ii img {
+          max-width: 80px;
+        }
+        .partners-ii span, .partners-ii p {
+          font-size: 12px;
+        }
+          
+          /* DRONE SECTION */
+          #drone-photography {
+            margin-top: 0;
+          }
+          #drone-photography .section-wrapper{
+            max-height: none;
+          }
+          /* FOOTER */
+      .footer-partners:before,
+      .footer-partners:after {
+        width: 120px;
+      }
+      #footer .copywright-wrapper {
+        text-align: center;
+        max-width: 27ch;
+      }
+      dialog {
+        height: 80%;
+      }
+      .contact-us-wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+      }
+      .submit-form #agreement-text {
+        font-size: 12px;
+      }
+      .contact-us-wrapper .contact-info {
+        display: none;
+      }
+      .contact-info, .submit-form {
+        padding-block: 18px;
+        margin-block: auto;
+      }
+}
