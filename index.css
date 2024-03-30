@@ -285,7 +285,7 @@ h1 {
 }
 /* HERO SECTION */
 #hero-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("/assets/hero-bg.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("./assets/hero-bg.jpg");
     background-color: gray;
     background-repeat: no-repeat;
     background-position: center;
@@ -772,7 +772,7 @@ text-justify: inter-word;
 /* WORK SECTION */
 #work-section {
   margin-block: 88px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("/assets/work-with-us.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url("./assets/work-with-us.png");
   background-color: gray;
   background-repeat: no-repeat;
   background-position: center;
